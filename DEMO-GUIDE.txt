@@ -1,0 +1,18 @@
+PUBLIC CLIPS RECORDING PLAN
+
+Use a separate demo browser workspace with fictional data. Do not record the cPanel environment, credentials, identity dossier or private shop customer details.
+
+Suggested duration: 3–4 minutes (a recommendation, not a claimed official duration requirement).
+
+0:00 — Introduce the problem: a small pharmacy needs to know what it has, what will expire, who owes money, and what to restock.
+0:25 — Open Medicines. Show country → generic/group → medicine selection and editable fields. Use the original sample illustrations or your own permitted package photo.
+0:55 — Receive a fictional supplier batch with expiry and unit cost. Show stock increasing.
+1:20 — Complete a small demo POS sale. Explain FEFO, expired-stock rejection, and prescription-review confirmation. Show the receipt and resulting stock.
+1:55 — Open AI inventory. Generate a reorder proposal from existing catalogue data. Change a quantity, deselect an item, and approve the draft. Explain that approval does not place an order or change stock.
+2:40 — Receive the draft as a delivery using the same action as manual purchasing. Show that the draft is marked received.
+3:05 — Ask the shop assistant for a sales/dues/stock summary. Explain that results use computed records and that the agent cannot transfer money or give clinical advice.
+3:30 — Show Settings: real Agent-Native shared actions, local browser storage and backup controls. Briefly show Bengali and mobile layout.
+
+Use Clips at https://clips.agent-native.com/ to record actual interaction. Publish the recording and verify its link in a signed-out view. Recording a clip alone does not submit the entry.
+
+Submission deadline: 2026-11-09 23:59 America/Los_Angeles, equivalent to 2026-11-10 13:59 Asia/Dhaka. Verify the official page before submission: https://www.builder.io/hackathon/rules

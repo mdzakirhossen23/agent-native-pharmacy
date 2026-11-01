@@ -1,0 +1,10 @@
+node_modules/
+pharmacy-dist/
+pharmacy-release/
+.env
+.env.*
+!.env.example
+*.sqlite
+*.sqlite-*
+*.log
+work/

@@ -1,0 +1,14 @@
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+import {build as viteBuild} from 'vite';
+import {build as bundle} from 'esbuild';
+const root=path.dirname(fileURLToPath(import.meta.url));process.chdir(root);
+await import('./build-pharmacy-vocab.mjs');
+await viteBuild({configFile:path.join(root,'pharmacy-vite.config.js')});
+await fs.mkdir('pharmacy-release/public',{recursive:true});
+await fs.cp('pharmacy-dist','pharmacy-release/public',{recursive:true});
+await fs.copyFile('pharmacy-dist/pharmacy.html','pharmacy-release/public/index.html');
+await fs.copyFile('node_modules/sql.js/dist/sql-wasm.wasm','pharmacy-release/sql-wasm.wasm');
+await bundle({entryPoints:['pharmacy-server.mjs'],bundle:true,platform:'node',target:'node20',format:'esm',external:['@opentelemetry/api'],banner:{js:"import {createRequire} from 'node:module'; import {fileURLToPath as bundleFile} from 'node:url'; import {dirname as bundleDir} from 'node:path'; const require=createRequire(import.meta.url); const __dirname=bundleDir(bundleFile(import.meta.url));"},outfile:'pharmacy-release/server.mjs'});
+console.log('Release built. Start with npm start.');

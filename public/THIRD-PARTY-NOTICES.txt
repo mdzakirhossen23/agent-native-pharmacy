@@ -1,0 +1,19 @@
+THIRD-PARTY AND ASSET NOTICES
+
+Project: Agent-Native Hackathon (pharmacy workspace)
+Creator: MD ZAKIR HOSSAIN
+Development: 2026 hackathon with AI coding assistance.
+
+Runtime: @agent-native/core 0.222.2 (Builder.io, MIT), Zod (MIT), sql.js (MIT; SQLite engine public domain), ws (MIT).
+Build: Vite, esbuild and Acorn (MIT). Exact locked versions are in package-lock.json. Installed dependencies retain their own copyright and license notices.
+
+Original assets: pharmacy-icon.png, favicon.ico and media/demo-illustration-1.png through demo-illustration-5.png are programmatic geometric artwork created for this project. They depict generic sample packaging, not actual medicines. No regulator, manufacturer, news or search-engine packaging photographs are bundled in the current release/source package.
+
+Prior demo image references are upgraded to these illustrations. User-uploaded real product photos are not included in the source repository; users are responsible for their upload permissions.
+
+medicine-groups.js includes a small factual starter list with manufacturer/regulator source URLs. It is not a complete register and gives no treatment or substitution advice. Brands remain their owners' trademarks. A source link does not grant permission to copy photography.
+
+Exchange rates: Frankfurter API, https://frankfurter.dev/. Conversion is for display; the ledger remains in BDT paisa.
+AI and translation: OpenAI API through server-only environment configuration. No credentials are distributed in source or frontend files.
+
+No competitor POS source, private identity/academic documents, real transaction exports or customer database is included in the source package.
